@@ -1,0 +1,108 @@
+# PromCon 2017
+
+## Schedule
+
+https://promcon.io/2017-munich/schedule/
+
+## Welcome
+
+200 people
+
+1 year:
+360->650 contributors
+50->200+ third party integrations
+
+CERN, NYT, DB (all linux with node exporter and prometheus),
+google, redhat, digitalocean,...)
+
+##  https://promcon.io/2017-munich/talks/monitoring-cloudflares-planet-scale-edge-network-with-prometheus
+
+* @mattbostock
+* cdn
+* 185 prometheus servers
+* 4 top level servers (federating)
+* 15 days data retention
+* more interesting data on the slides
+* benutzen mtail für logging to metrics
+* jeder prom node monitored die anderen im datacenter
+* coole mentionings von diversen tools in den slides weiter hinten
+* lesson learned: standardise metric labels early
+* alertmanager quite unreliable at their site
+
+## https://promcon.io/2017-munich/talks/start-your-engines-white-box-monitoring-for-load-tests
+
+* Prometheus als TSDB für load testing
+* add the same metrics in test and prod
+* jmeter, gatling, 
+* USE und RED method
+  * utilization, saturation, errors for cpu, disk, ...
+  * i. e. for endpoints: request rate, error rate, duration (distribution)
+
+## Best Practices and Beastly Pitfalls
+
+* Talks about good and bad practices
+* Lots of examples and explanations
+* Some details and rules of thumbs
+* Important: Metrics and their labels should not overlap
+* Every unique set of labels creates a new series
+  * dont i. e. labels never should contain ids or io addresses or whatever can "explode" in terms of the sum of time series generated
+* labels should be quite static
+* sometimes it is a good idea to add another metric with a label which can be JOINed at query time
+* Rob Ewaschuk "My Philosophy on Alerting"
+* dont alert on timeseries only, ALSO alert always if stuff is up or down in general!!
+* rate() von counter werten kommen mit counter resets klar. sums nicht. 
+
+## https://promcon.io/2017-munich/talks/prometheus-as-a-internal-service
+
+* promgen web ui to generate and maintain prometheus configurations
+* Does also query shards for federation (proxy function)
+* Should be checked out
+
+## https://promcon.io/2017-munich/talks/grafana-and-prometheus
+
+* Grafana + Prometheus
+* Update-Tool zu neuen Features rund um Grafana
+* Grafana PromQL has now syntax highlighting, function docs etc. - sau cool
+* checkout diagram plugin
+* Development is rapid
+* 92000 Grafana installs have 16000 prometheus datasources enabled
+
+## https://promcon.io/2017-munich/talks/why-we-love-prometheus-even-though-i-hate-it
+
+* vpn provider
+* trying to like prometheus but hit every problem they could
+* nice talk to watch if you think all things are great in prom world
+* https://www.anchorfree.com
+* Several thousand nodes
+* 200 countries
+
+## https://promcon.io/2017-munich/talks/analyze-prometheus-metrics-like-a-data-scientist
+
+* pushing the boundaries from the perspective of datascience
+* some examples like prediction of latency in http requests
+
+## https://promcon.io/2017-munich/talks/alertmanager-and-high-availability
+
+* coreos origin
+* crreating ha alertmanager 
+* they use gossip (like consul, cassandra) for HA between alertmanagers
+* internally they use mesh from weaveworks
+* ha is now directly in alertmanager 
+
+## https://promcon.io/2017-munich/talks/play-with-prometheus
+
+* dev driven (no testing, canary deployment)
+* all cloud
+* all containers and aws
+
+## https://promcon.io/2017-munich/talks/the-uninstrumentable-getting-apache-spark-and-prometheus-to-play-nicely
+
+* FUNNY talk. two peole + british humor
+* Apache Spark + PySpark
+* multiple short lived workers push to the push gateway
+* quite big project
+
+## https://promcon.io/2017-munich/talks/social-aspects-of-change
+
+* social challenges in big environments for monitoring
+* all about change 
