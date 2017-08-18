@@ -173,6 +173,8 @@ Great blogpost: https://fabxc.org/blog/2017-04-10-writing-a-tsdb/
 
 * Staleness is an old problem since 2014 which leads into some - at least - inconvenient behaviour(s).
   * Brian gives some examples in his slides
-* 
+* A lot of technical insight on the changes
 
 ## https://promcon.io/2017-munich/talks/lightning-talks-day2
+
+* Many nice little pet projects and use cases
