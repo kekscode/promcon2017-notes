@@ -105,9 +105,18 @@ google, redhat, digitalocean,...)
 ## https://promcon.io/2017-munich/talks/social-aspects-of-change
 
 * social challenges in big environments for monitoring
-* all about change 
+* all about change
 * Remove toil (mühevolle arbeit)
 
-## Lightning talks
+## https://promcon.io/2017-munich/talks/cortex-prometheus-as-a-service-one-year-on
 
-Good stuff as usual in lightning talks.
+missed
+
+## https://promcon.io/2017-munich/talks/prometheus-everything-observing-kubernetes-in-the-cloud
+
+
+## https://promcon.io/2017-munich/talks/integrating-prometheus-and-influxdb
+
+* Influx-DB has fields
+* Generischere Abfragesprache
+* "Process" kapacitor product
