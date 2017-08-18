@@ -143,3 +143,5 @@ missed
 * 7TB => ~0.8TB
 * Churn is a problem in timeseries. This will be solved and the slides explain how in a graphical way. Also there is a blog post from [Fabian](https://twitter.com/fabxc)
 * Lots of more improvements in terms of hardware usage and performance + efficiency
+
+Great blogpost: https://fabxc.org/blog/2017-04-10-writing-a-tsdb/
