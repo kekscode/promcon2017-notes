@@ -119,4 +119,16 @@ missed
 
 * Influx-DB has fields
 * Generischere Abfragesprache
+  * Sql artig; will be replaced by IFQL in the future
+  * a [directed A graph (DAG)](https://en.m.wikipedia.org/wiki/Directed_acyclic_graph) will be used to support multiple query languages by the engine
 * "Process" kapacitor product
+* More general use case compared to the TSDB prom already includes
+* Influx and Prometheus share code and (want) to work together
+
+## https://promcon.io/2017-munich/talks/a-worked-example-of-monitoring-a-queue-based-application
+
+* to be honest: not so intersting talk about just using prometheus
+* OTOH: Good real life examples for queue monitoring code, promql queries and grafana dashboards
+* Good examples for usage at QuoScient
+
+## 
