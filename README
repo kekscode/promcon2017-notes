@@ -9,6 +9,10 @@ https://promcon.io/2017-munich/schedule/
 ... tell about people. companies, problems & solution or use-cases, general mood, the microservice and distributed world of computing, 
 
 * Prometheus is a swiss army knive for all things gathering metrics and querying them with statistical functions
+  * Server monitoring
+  * Service monitoring
+  * IoT and sensor monitoring
+  * Load Test monitoring
 * Specially white box monitoring
 * General idea: gather lots of metrics quite often and model easy to (very) complex queries to get valuable insight (and react automatically if needed)
   * Give 2-3 queries as examples
