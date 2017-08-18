@@ -8,6 +8,8 @@ https://promcon.io/2017-munich/schedule/
 
 ... tell about people. companies, problems & solution or use-cases, general mood, the microservice and distributed world of computing, 
 
+brian brazil gets his fett weg
+
 ## Welcome
 
 200 people
@@ -148,8 +150,23 @@ Great blogpost: https://fabxc.org/blog/2017-04-10-writing-a-tsdb/
 
 ## https://promcon.io/2017-munich/talks/improving-user-and-developer-experience-of-the-alertmanager-ui
 
+* Old alert manager ui could be improved or rewritten
+  * Grouping, Filtering, Create/Preview alerts
+* New UI uses elm. It is s functional language which compiles to javascript. Reasons: Maintainable and usable.  
+* statically typed, pure functions, great compiler, no runtime exceptions, no front end regressions, etc.
+* routing tree is missing (will be back soon)
+* Talks about how to work with elm
+* 183 commits => merge replaces old ui with new ui
+
 ## https://promcon.io/2017-munich/talks/using-tsdb-as-a-library
 
+* FUNNY talk. Nice guy. 
+* PromFlux - prometheus with PUSH
+* Simple
+* Showed go code which uses prom tsdb as a library for pushing ts data
+
 ## https://promcon.io/2017-munich/talks/staleness-in-prometheus-2-0
+
+
 
 ## https://promcon.io/2017-munich/talks/lightning-talks-day2
