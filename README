@@ -4,6 +4,10 @@
 
 https://promcon.io/2017-munich/schedule/
 
+## The conference in general
+
+... tell about people. companies, problems & solution or use-cases, general mood, the microservice and distributed world of computing, 
+
 ## Welcome
 
 200 people
@@ -131,4 +135,11 @@ missed
 * OTOH: Good real life examples for queue monitoring code, promql queries and grafana dashboards
 * Good examples for usage at QuoScient
 
-## 
+## https://promcon.io/2017-munich/talks/storing-16-bytes-at-scale
+
+* prometheus: 8 byte timestamp + 8 byte data per TSDB entry
+* Compression! Unix timestamps can be written short by using offsets and even these can be compressed
+* In the end: 16 bytes per sample => 1.37 bytes per sample on Prometheus 2 by implementing all compression
+* 7TB => ~0.8TB
+* Churn is a problem in timeseries. This will be solved and the slides explain how in a graphical way. Also there is a blog post from [Fabian](https://twitter.com/fabxc)
+* Lots of more improvements in terms of hardware usage and performance + efficiency
