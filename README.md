@@ -2,9 +2,9 @@
 
 # TODO
 
-[] Get Video Recording links
-[] Blog post
-[] Add to sharing list
+- [ ] Get Video Recording links
+- [ ] Blog post
+- [ ] Add to sharing list
 
 ## About
 
