@@ -72,16 +72,16 @@ Carl Bergquist from Grafanalabs showed the ongoing support from the Grafana dash
 
 These are some examples i picked randomly to show that prometheus proves as a swiss army knife for all things around gathering metrics and making use of the data. The general idea is always to continuously gather *lots* of metrics and model your monitoring use-cases on top of this data.
 
-## Welcome session
+The following are my quick-and-dirty notes while attending the talks.
 
-200 people
+## Welcome: 1 year passed...
 
-1 year:
-360->650 contributors
-50->200+ third party integrations
+...and the community is growing:
 
-CERN, NYT, DB (all linux with node exporter and prometheus),
-google, redhat, digitalocean,...)
+* 360 -> 650 contributors
+* 50 -> 200+ third party integrations
+
+Some famous users: CERN, NYT, DB, google, redhat, digitalocean,...
 
 ##  https://promcon.io/2017-munich/talks/monitoring-cloudflares-planet-scale-edge-network-with-prometheus
 
@@ -91,22 +91,22 @@ google, redhat, digitalocean,...)
 * 4 top level servers (federating)
 * 15 days data retention
 * more interesting data on the slides
-* benutzen mtail für logging to metrics
-* jeder prom node monitored die anderen im datacenter
-* coole mentionings von diversen tools in den slides weiter hinten
+* using mtail for logging to metrics
+* every prom node monitored all other nodes
+* interesting tools mentioned
 * lesson learned: standardise metric labels early
-* alertmanager quite unreliable at their site
+* alertmanager quite unreliable at their site (older versions, newer versions improved)
 
 ## https://promcon.io/2017-munich/talks/start-your-engines-white-box-monitoring-for-load-tests
 
-* Prometheus als TSDB für load testing
-* add the same metrics in test and prod
+* Prometheus as TSDB for load testing
+* use the same metrics in test and prod
 * jmeter, gatling, 
-* USE und RED method
+* USE and RED method
   * utilization, saturation, errors for cpu, disk, ...
   * i. e. for endpoints: request rate, error rate, duration (distribution)
 
-## Best Practices and Beastly Pitfalls
+## https://promcon.io/2017-munich/talks/best-practices-and-beastly-pitfalls/
 
 * Talks about good and bad practices
 * Lots of examples and explanations
@@ -187,8 +187,8 @@ missed that one, too.
 ## https://promcon.io/2017-munich/talks/integrating-prometheus-and-influxdb
 
 * Influx-DB has fields
-* Generischere Abfragesprache
-  * Sql artig; will be replaced by IFQL in the future
+* generic query language
+  * Sql sortof; will be replaced by IFQL in the future
   * a [directed A graph (DAG)](https://en.m.wikipedia.org/wiki/Directed_acyclic_graph) will be used to support multiple query languages by the engine
 * "Process" kapacitor product
 * More general use case compared to the TSDB prom already includes
