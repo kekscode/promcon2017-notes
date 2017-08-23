@@ -53,7 +53,14 @@ The schedule can be found [here][2] and all abstracts from the various talks wil
 
 ## The conference in general
 
-... tell about people. companies, problems & solution or use-cases, general mood, the microservice and distributed world of computing, 
+The conference was held at Google in munich. There were round about attendees from all sorts of IT-focused companies. The focus
+was clearly on companies with very large software stacks consisting of lots of network services in a heterogenous environment.
+
+For example [Sneha Inguva][sneha] from digitalocean monitors 15 kubernetes clusteres in 12 data centers with 300+ production applications in running. They use 2 promethei and 1 alertmanager per cluster and create 1.5 million different timeseries and 99218 samples per second (550k per second on the line). Digitalocean monitors for cluster hardware usage, network and state (actual state vs. expected). They *also* use the prometheus metrics for capacity planning and autoscaling of services, loadbalancers and worker nodes, too.
+
+Carl Bergquist from Grafanalabs showed the ongoing support from the Grafana dashboard project which integrates prometheus out-of-the-box as a datasource. The new integration features [typeahead, search suggestions and more][graflabs].
+
+[Matt Bostock][mattb] from [Cloudflare showed their prometheus deployment][cloudflare] showed some impressive numbers. They monitor their global network with 185 local prometheus servers and 4 top level federators.
 
 * Prometheus is a swiss army knive for all things gathering metrics and querying them with statistical functions
   * Server monitoring
@@ -246,3 +253,7 @@ Great blogpost: https://fabxc.org/blog/2017-04-10-writing-a-tsdb/
 [7]: https://www.youtube.com/watch?v=-JkxB0CiMjU&list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vmU
 [8]: https://prometheus.io/docs/introduction/overview/
 [9]: https://prometheus.io/docs/querying/basics/
+[graflabs]: https://grafana.com/blog/2017/08/18/timeshiftgrafanabuzz-1w-issue-9/
+[sneha]: https://twitter.com/snehainguva/status/899647928746205184
+[cloudflare]: https://drive.google.com/file/d/0BzRE_fwreoDQcTF2WUtHRXp0ZzA/view
+[mattb]: https://twitter.com/mattbostock 
