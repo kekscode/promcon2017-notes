@@ -2,8 +2,10 @@
 
 ## About prometheus monitoring
 
-This is the seconds conference covering prometheus and the first one i attend to. Prometheus is still a very young project
-which has been open sourced in 2012 by SoundCloud. It is based on the works at Google and what they call "borgmon".
+This is the second conference covering prometheus and the first one i attended to.
+
+Prometheus is still a very young project which has been open sourced in 2012 by SoundCloud. It is based
+on the works at Google and what they call "borgmon".
 
 Prometheus focuses on reliability and simplicity. A basic deployment consists of only one self-contained binary
 and a config file. It combines some interesting features which makes it especially attractive for scalable monitoring
@@ -20,6 +22,11 @@ this concise query: `topk(3, sum(http_requests_total{status~="^5"}) by (cache))`
 * Exceptional good graphing and dashboard support
 * Can be deployed on one or multiple nodes (for availability)
 * Growing ecosystem of complementary software following the same design principles
+
+Some more PromQL examples by prometheus core contributor Julius Volz:
+
+* [Tutorial Part 1][jvtutor1]
+* [Tutorial Part 2][jvtutor2]
 
 ### Links
 
@@ -53,27 +60,19 @@ The schedule can be found [here][2] and all abstracts from the various talks wil
 
 ## The conference in general
 
-The conference was held at Google in munich. There were round about attendees from all sorts of IT-focused companies. The focus
-was clearly on companies with very large software stacks consisting of lots of network services in a heterogenous environment.
-
-For example [Sneha Inguva][sneha] from digitalocean monitors 15 kubernetes clusteres in 12 data centers with 300+ production applications in running. They use 2 promethei and 1 alertmanager per cluster and create 1.5 million different timeseries and 99218 samples per second (550k per second on the line). Digitalocean monitors for cluster hardware usage, network and state (actual state vs. expected). They *also* use the prometheus metrics for capacity planning and autoscaling of services, loadbalancers and worker nodes, too.
-
-Carl Bergquist from Grafanalabs showed the ongoing support from the Grafana dashboard project which integrates prometheus out-of-the-box as a datasource. The new integration features [typeahead, search suggestions and more][graflabs].
+The conference was held at Google in munich and round about 200 attendees from all sorts of IT-focused companies were at the venue. Naturally in 2017's world of microservices swimming in vast amounts of data, most of the attendees work for companies with large software stacks consisting of lots of network services in a heterogenous environment.
 
 [Matt Bostock][mattb] from [Cloudflare showed their prometheus deployment][cloudflare] showed some impressive numbers. They monitor their global network with 185 local prometheus servers and 4 top level federators.
 
-* Prometheus is a swiss army knive for all things gathering metrics and querying them with statistical functions
-  * Server monitoring
-  * Service monitoring
-  * IoT and sensor monitoring
-  * Load Test monitoring
-* Specially white box monitoring
-* General idea: gather lots of metrics quite often and model easy to (very) complex queries to get valuable insight (and react automatically if needed)
-  * Give 2-3 queries as examples
-* Prometheus and Grafana are best friends => Grafana allows for eyecandy dashboards, aggregation and making sense of data visually or even alert
-* brian brazil gets his fett weg
+[Sneha Inguva][sneha] from digitalocean monitors 15 kubernetes clusteres in 12 data centers with 300+ production applications in running. They use 2 promethei and 1 alertmanager per cluster and create 1.5 million different timeseries and 99218 samples per second (550k per second on the line). Digitalocean monitors for cluster hardware usage, network and state (actual state vs. expected). They *also* use the prometheus metrics for capacity planning and autoscaling of services, loadbalancers and worker nodes, too.
 
-## Welcome
+On the small scale side of things, [Alexander Schwartz][ahus] showed us how he does application load testing by pushing metrics from JMeter and Gatling load testing tools into prometheus to leverage its qualities as a base for insights and nice dashboards.
+
+Carl Bergquist from Grafanalabs showed the ongoing support from the Grafana dashboard project which integrates prometheus out-of-the-box as a datasource. The new integration features [typeahead, search suggestions and more][graflabs].
+
+These are some examples i picked randomly to show that prometheus proves as a swiss army knife for all things around gathering metrics and making use of the data. The general idea is always to continuously gather *lots* of metrics and model your monitoring use-cases on top of this data.
+
+## Welcome session
 
 200 people
 
@@ -256,4 +255,7 @@ Great blogpost: https://fabxc.org/blog/2017-04-10-writing-a-tsdb/
 [graflabs]: https://grafana.com/blog/2017/08/18/timeshiftgrafanabuzz-1w-issue-9/
 [sneha]: https://twitter.com/snehainguva/status/899647928746205184
 [cloudflare]: https://drive.google.com/file/d/0BzRE_fwreoDQcTF2WUtHRXp0ZzA/view
-[mattb]: https://twitter.com/mattbostock 
+[mattb]: https://twitter.com/mattbostock
+[ahus]: https://twitter.com/ahus1de/status/898093290553303042
+[jvtutor1]: https://www.digitalocean.com/community/tutorials/how-to-query-prometheus-on-ubuntu-14-04-part-1
+[jvtutor2]: https://www.digitalocean.com/community/tutorials/how-to-query-prometheus-on-ubuntu-14-04-part-2
