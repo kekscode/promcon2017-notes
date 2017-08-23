@@ -83,7 +83,9 @@ The following are my quick-and-dirty notes while attending the talks.
 
 Some famous users: CERN, NYT, DB, google, redhat, digitalocean,...
 
-##  https://promcon.io/2017-munich/talks/monitoring-cloudflares-planet-scale-edge-network-with-prometheus
+## Talks
+
+**https://promcon.io/2017-munich/talks/monitoring-cloudflares-planet-scale-edge-network-with-prometheus**
 
 * @mattbostock
 * cdn
@@ -97,7 +99,7 @@ Some famous users: CERN, NYT, DB, google, redhat, digitalocean,...
 * lesson learned: standardise metric labels early
 * alertmanager quite unreliable at their site (older versions, newer versions improved)
 
-## https://promcon.io/2017-munich/talks/start-your-engines-white-box-monitoring-for-load-tests
+**https://promcon.io/2017-munich/talks/start-your-engines-white-box-monitoring-for-load-tests**
 
 * Prometheus as TSDB for load testing
 * use the same metrics in test and prod
@@ -106,7 +108,7 @@ Some famous users: CERN, NYT, DB, google, redhat, digitalocean,...
   * utilization, saturation, errors for cpu, disk, ...
   * i. e. for endpoints: request rate, error rate, duration (distribution)
 
-## https://promcon.io/2017-munich/talks/best-practices-and-beastly-pitfalls/
+**https://promcon.io/2017-munich/talks/best-practices-and-beastly-pitfalls/**
 
 * Talks about good and bad practices
 * Lots of examples and explanations
@@ -120,13 +122,13 @@ Some famous users: CERN, NYT, DB, google, redhat, digitalocean,...
 * dont alert on timeseries only, ALSO alert always if stuff is up or down in general!!
 * rate() von counter werten kommen mit counter resets klar. sums nicht. 
 
-## https://promcon.io/2017-munich/talks/prometheus-as-a-internal-service
+**https://promcon.io/2017-munich/talks/prometheus-as-a-internal-service**
 
 * promgen web ui to generate and maintain prometheus configurations
 * Does also query shards for federation (proxy function)
 * Should be checked out
 
-## https://promcon.io/2017-munich/talks/grafana-and-prometheus
+**https://promcon.io/2017-munich/talks/grafana-and-prometheus**
 
 * Grafana + Prometheus
 * Update-Tool zu neuen Features rund um Grafana
@@ -135,7 +137,7 @@ Some famous users: CERN, NYT, DB, google, redhat, digitalocean,...
 * Development is rapid
 * 92000 Grafana installs have 16000 prometheus datasources enabled
 
-## https://promcon.io/2017-munich/talks/why-we-love-prometheus-even-though-i-hate-it
+**https://promcon.io/2017-munich/talks/why-we-love-prometheus-even-though-i-hate-it**
 
 * vpn provider
 * trying to like prometheus but hit every problem they could
@@ -144,12 +146,12 @@ Some famous users: CERN, NYT, DB, google, redhat, digitalocean,...
 * Several thousand nodes
 * 200 countries
 
-## https://promcon.io/2017-munich/talks/analyze-prometheus-metrics-like-a-data-scientist
+**https://promcon.io/2017-munich/talks/analyze-prometheus-metrics-like-a-data-scientist**
 
 * pushing the boundaries from the perspective of datascience
 * some examples like prediction of latency in http requests
 
-## https://promcon.io/2017-munich/talks/alertmanager-and-high-availability
+**https://promcon.io/2017-munich/talks/alertmanager-and-high-availability**
 
 * coreos origin
 * crreating ha alertmanager 
@@ -157,34 +159,34 @@ Some famous users: CERN, NYT, DB, google, redhat, digitalocean,...
 * internally they use mesh from weaveworks
 * ha is now directly in alertmanager 
 
-## https://promcon.io/2017-munich/talks/play-with-prometheus
+**https://promcon.io/2017-munich/talks/play-with-prometheus**
 
 * dev driven (no testing, canary deployment)
 * all cloud
 * all containers and aws
 
-## https://promcon.io/2017-munich/talks/the-uninstrumentable-getting-apache-spark-and-prometheus-to-play-nicely
+**https://promcon.io/2017-munich/talks/the-uninstrumentable-getting-apache-spark-and-prometheus-to-play-nicely**
 
 * FUNNY talk. two peole + british humor
 * Apache Spark + PySpark
 * multiple short lived workers push to the push gateway
 * quite big project
 
-## https://promcon.io/2017-munich/talks/social-aspects-of-change
+**https://promcon.io/2017-munich/talks/social-aspects-of-change**
 
 * social challenges in big environments for monitoring
 * all about change
 * Remove toil (mühevolle arbeit)
 
-## https://promcon.io/2017-munich/talks/cortex-prometheus-as-a-service-one-year-on
+**https://promcon.io/2017-munich/talks/cortex-prometheus-as-a-service-one-year-on**
 
 missed that one.
 
-## https://promcon.io/2017-munich/talks/prometheus-everything-observing-kubernetes-in-the-cloud
+**https://promcon.io/2017-munich/talks/prometheus-everything-observing-kubernetes-in-the-cloud**
 
 missed that one, too.
 
-## https://promcon.io/2017-munich/talks/integrating-prometheus-and-influxdb
+**https://promcon.io/2017-munich/talks/integrating-prometheus-and-influxdb**
 
 * Influx-DB has fields
 * generic query language
@@ -194,13 +196,13 @@ missed that one, too.
 * More general use case compared to the TSDB prom already includes
 * Influx and Prometheus share code and (want) to work together
 
-## https://promcon.io/2017-munich/talks/a-worked-example-of-monitoring-a-queue-based-application
+**https://promcon.io/2017-munich/talks/a-worked-example-of-monitoring-a-queue-based-application**
 
 * to be honest: not so intersting talk about just using prometheus
 * OTOH: Good real life examples for queue monitoring code, promql queries and grafana dashboards
 * Good examples for usage at QuoScient
 
-## https://promcon.io/2017-munich/talks/storing-16-bytes-at-scale
+**https://promcon.io/2017-munich/talks/storing-16-bytes-at-scale**
 
 * prometheus: 8 byte timestamp + 8 byte data per TSDB entry
 * Compression! Unix timestamps can be written short by using offsets and even these can be compressed
@@ -211,7 +213,7 @@ missed that one, too.
 
 Great blogpost: https://fabxc.org/blog/2017-04-10-writing-a-tsdb/
 
-## https://promcon.io/2017-munich/talks/improving-user-and-developer-experience-of-the-alertmanager-ui
+**https://promcon.io/2017-munich/talks/improving-user-and-developer-experience-of-the-alertmanager-ui**
 
 * Old alert manager ui could be improved or rewritten
   * Grouping, Filtering, Create/Preview alerts
@@ -221,20 +223,20 @@ Great blogpost: https://fabxc.org/blog/2017-04-10-writing-a-tsdb/
 * Talks about how to work with elm
 * 183 commits => merge replaces old ui with new ui
 
-## https://promcon.io/2017-munich/talks/using-tsdb-as-a-library
+**https://promcon.io/2017-munich/talks/using-tsdb-as-a-library**
 
 * FUNNY talk. Nice guy. 
 * PromFlux - prometheus with PUSH
 * Simple
 * Showed go code which uses prom tsdb as a library for pushing ts data
 
-## https://promcon.io/2017-munich/talks/staleness-in-prometheus-2-0
+**https://promcon.io/2017-munich/talks/staleness-in-prometheus-2-0**
 
 * Staleness is an old problem since 2014 which leads into some - at least - inconvenient behaviour(s).
   * Brian gives some examples in his slides
 * A lot of technical insight on the changes
 
-## https://promcon.io/2017-munich/talks/lightning-talks-day2
+**https://promcon.io/2017-munich/talks/lightning-talks-day2**
 
 * Many nice little pet projects and use cases
 
