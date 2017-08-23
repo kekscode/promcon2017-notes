@@ -1,5 +1,11 @@
 # PromCon 2017 in munich
 
+# TODO
+
+[] Get Video Recording links
+[] Blog post
+[] Add to sharing list
+
 ## About
 
 From the [PromCon website][1]:
