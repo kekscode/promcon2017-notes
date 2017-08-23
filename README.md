@@ -4,15 +4,15 @@
 
 From the [PromCon website][1]:
 
-**PromCon 2017 will be the second conference around the Prometheus monitoring system.
+*PromCon 2017 will be the second conference around the Prometheus monitoring system.
 It will take place from August 17 - 18 at Google Munich and will be a single-track
 event with space for 200 attendants. All talks will be recorded and published after
-the event to create maximum exposure.**
+the event to create maximum exposure.*
 
-**PromCon aims to connect Prometheus users and developers from around the world in
+*PromCon aims to connect Prometheus users and developers from around the world in
 order to exchange knowledge, best practices, and experience gained around using Prometheus.
 We also want to collaborate to build a community and grow professional connections around
-systems and service monitoring.**
+systems and service monitoring.*
 
 ## Schedule
 
@@ -198,6 +198,10 @@ Great blogpost: https://fabxc.org/blog/2017-04-10-writing-a-tsdb/
 ## https://promcon.io/2017-munich/talks/lightning-talks-day2
 
 * Many nice little pet projects and use cases
+
+## Video Recordings
+
+* TBD
 
 [1]: https://promcon.io/2017-munich/
 [2]: https://promcon.io/2017-munich/schedule/
