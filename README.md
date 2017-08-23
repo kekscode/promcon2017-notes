@@ -6,7 +6,14 @@
 - [ ] Blog post
 - [ ] Add to sharing list
 
-## About
+## About prometheus monitoring
+
+* [Project website][5]
+* [Github project][6]
+* [@PrometheusIO][3] on Twitter
+* Tweets from conference attendees: [#promcon2017][4]
+
+## About PromCon
 
 From the [PromCon website][1]:
 
@@ -211,3 +218,7 @@ Great blogpost: https://fabxc.org/blog/2017-04-10-writing-a-tsdb/
 
 [1]: https://promcon.io/2017-munich/
 [2]: https://promcon.io/2017-munich/schedule/
+[3]: https://twitter.com/PrometheusIO
+[4]: https://twitter.com/search?q=%23PromCon2017
+[5]: https://prometheus.io/
+[6]: https://github.com/prometheus
