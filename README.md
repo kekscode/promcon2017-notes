@@ -214,7 +214,8 @@ Great blogpost: https://fabxc.org/blog/2017-04-10-writing-a-tsdb/
 
 ## Video Recordings
 
-* TBD
+* PromCon 2017
+* [PromCon 2016][7]
 
 [1]: https://promcon.io/2017-munich/
 [2]: https://promcon.io/2017-munich/schedule/
@@ -222,3 +223,4 @@ Great blogpost: https://fabxc.org/blog/2017-04-10-writing-a-tsdb/
 [4]: https://twitter.com/search?q=%23PromCon2017
 [5]: https://prometheus.io/
 [6]: https://github.com/prometheus
+[7]: https://www.youtube.com/watch?v=-JkxB0CiMjU&list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vmU
