@@ -11,7 +11,9 @@ of lots of (micro)services in a very dynamic environment:
 
 * Multi-dimensional data (e. g. "no tree-based data model") which consists of a metric name, a value and
 multiple key/value pairs for sorting, grouping, filterings, etc. Think of "tags" for a metric's datapoint.
-* A flexible query language ([PromQL][9]) which is specifically designed to support the prometheus data model
+It looks like: `http_requests_total{cache="upload",site="mywebserver"}.`
+* A flexible query language ([PromQL][9]) which is specifically designed to support the prometheus data model. For example
+this concise query: `topk(3, sum(http_requests_total{status~="^5"}) by (cache))` would return the top 3 caches with HTTP 5xx errors by regex matching the cache status.
 * Pull and push for data ingestions (though pull aka "scraping" is the prefered method by design)
 * Supports white- and blackbox monitoring
 * Static and dynamic target discovery
