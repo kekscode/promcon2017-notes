@@ -1,17 +1,35 @@
 # PromCon 2017 in munich
 
-# TODO
-
-- [ ] Get Video Recording links
-- [ ] Blog post
-- [ ] Add to sharing list
-
 ## About prometheus monitoring
+
+This is the seconds conference covering prometheus and the first one i attend to. Prometheus is still a very young project
+which has been open sourced in 2012 by SoundCloud. It is based on the works at Google and what they call "borgmon".
+
+Prometheus focuses on reliability and simplicity. A basic deployment consists of only one self-contained binary
+and a config file. It combines some interesting features which makes it especially attractive for scalable monitoring
+of lots of (micro)services in a very dynamic environment:
+
+* Multi-dimensional data (e. g. "no tree-based data model") which consists of a metric name, a value and
+multiple key/value pairs for sorting, grouping, filterings, etc. Think of "tags" for a metric's datapoint.
+* A flexible query language ([PromQL][9]) which is specifically designed to support the prometheus data model
+* Pull and push for data ingestions (though pull aka "scraping" is the prefered method by design)
+* Supports white- and blackbox monitoring
+* Static and dynamic target discovery
+* Exceptional good graphing and dashboard support
+* Can be deployed on one or multiple nodes (for availability)
+* Growing ecosystem of complementary software following the same design principles
+
+### Links
 
 * [Project website][5]
 * [Github project][6]
 * [@PrometheusIO][3] on Twitter
 * Tweets from conference attendees: [#promcon2017][4]
+
+### Overview
+
+An overview about its history, features and architecture can be
+found on the first page [of the prometheus documentation][8].
 
 ## About PromCon
 
@@ -29,7 +47,7 @@ systems and service monitoring.*
 
 ## Schedule
 
-The schedule can be found [here][2] and will be linked in the following notes.
+The schedule can be found [here][2] and all abstracts from the various talks will be linked in the notes.
 
 ## The conference in general
 
@@ -214,7 +232,7 @@ Great blogpost: https://fabxc.org/blog/2017-04-10-writing-a-tsdb/
 
 ## Video Recordings
 
-* PromCon 2017
+* PromCon 2017 (not yet released)
 * [PromCon 2016][7]
 
 [1]: https://promcon.io/2017-munich/
@@ -224,3 +242,5 @@ Great blogpost: https://fabxc.org/blog/2017-04-10-writing-a-tsdb/
 [5]: https://prometheus.io/
 [6]: https://github.com/prometheus
 [7]: https://www.youtube.com/watch?v=-JkxB0CiMjU&list=PLoz-W_CUquUlCq-Q0hy53TolAhaED9vmU
+[8]: https://prometheus.io/docs/introduction/overview/
+[9]: https://prometheus.io/docs/querying/basics/
